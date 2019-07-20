@@ -15,7 +15,7 @@ body{
     transition: background 0.4s linear;
     width:100%;
     padding:15px;
-    background: lightblue;
+    background:rgba(173,216,230, 0);
     color: white;
     text-align: center;
     overflow: hidden;
@@ -44,13 +44,13 @@ body{
      width: 30%;
      display: none;
      position: fixed;
-     top:102px;
+     top:88px;
      right: 0;
      margin: 0;
      height: 0px;
      z-index: 20;
      float: right;
-     transition: height 1s linear; 
+     /* transition: height 1s linear;  */
      background:rgba(173,216,230, 0.8);
  }
 
@@ -62,8 +62,30 @@ body{
      50%{opacity:0;}
      100%{opacity:1;}
  }
- /* .group:after{
-     content: "";
-     display: table;
-     clear: both;
- } */
+
+
+.landing{
+    background: url('/Users/boyangmatsapola/Desktop/workshops/website-1/13582147_10153839824117476_7785940622878764708_o.jpg') no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 2;
+}
+.music {
+    background: url('/Users/boyangmatsapola/Desktop/workshops/website-1/29665167_10155616170427476_2852910063780777018_o.jpg') center no-repeat;
+    width: 100%;
+    height: 750px;
+    padding: 10px;
+    background-attachment: fixed;
+    
+    background-size: cover;
+ }
+ .shows {
+    background: url('/Users/boyangmatsapola/Desktop/workshops/website-1/12473978_10153396013002476_8292505649690142160_o.jpg') center no-repeat;
+    width: 100%;
+    height: 750px;
+    padding: 10px;
+    background-attachment: fixed;
+    background-size: cover;
+ }
