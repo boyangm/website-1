@@ -8,12 +8,12 @@ var parallax = document.querySelector('.parallax');
     
     function expandNav(){
         if(menuNav.style.display === "none"){
+            menuNav.style.minHeight= "100px";
             menuNav.style.display="block";
-            menuNav.style.height= "200px";
             
         }else{
+            menuNav.style.minHeight= "0px";
             menuNav.style.display="none";
-            menuNav.style.height= "0px";
         }
     }
 
@@ -27,7 +27,6 @@ var parallax = document.querySelector('.parallax');
             navBar.style.background="transparent";
         };
     });
-        
 
 }
 

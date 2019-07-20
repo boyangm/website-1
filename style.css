@@ -24,8 +24,8 @@ body{
 }
 #arrowDown{
     position:absolute;
-    bottom:0;
-    right:117px;
+    bottom:10px;
+    right:45px;
 
 }
 .wrapper h1{
@@ -47,20 +47,27 @@ body{
      top:88px;
      right: 0;
      margin: 0;
-     height: 0px;
+     min-height: 0px;
      z-index: 20;
      float: right;
-     /* transition: height 1s linear;  */
+     transition: min-height 1s linear; 
      background:rgba(173,216,230, 0.8);
  }
 
  img{
+   
     animation: blink 1s linear infinite;
+    animation: move 1s linear infinite;
  }
  @keyframes blink{
      0%{opacity: 1;}
      50%{opacity:0;}
      100%{opacity:1;}
+ }
+ @keyframes move{
+     0%{transform: translateY(0px);}
+     50%{transform: translateY(5px);}
+     100%{transform: translateY(10px);}
  }
 
 
@@ -78,7 +85,7 @@ body{
     height: 750px;
     padding: 10px;
     background-attachment: fixed;
-    
+    position:relative;
     background-size: cover;
  }
  .shows {
@@ -89,3 +96,20 @@ body{
     background-attachment: fixed;
     background-size: cover;
  }
+ #trackPlayer{
+     background: lightblue;
+     opacity: 0.9;
+     
+ }
+.music h2{
+    color:white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.widget{
+    display:block;
+    width: 100%;
+    margin: 0 auto;
+    position:relative;
+    text-align: center;
+}
